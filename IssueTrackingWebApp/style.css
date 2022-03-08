@@ -1,0 +1,268 @@
+        /*The home page*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .wrapper {
+            width: 1170px;
+            margin: auto;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./solarpannels2.jpg");
+            height: 100vh;
+            -webkit-background-size: cover;
+            background: cover;
+            background-position: center center;
+            position: relative;
+        }
+        
+        .nav-area {
+            float: right;
+            list-style: none;
+            margin: 30px;
+        }
+        
+        .nav-area li {
+            display: inline-block;
+        }
+        
+        .nav-area li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 20px;
+            font-family: poppins;
+            font-size: 14px;
+        }
+        
+        .nav-area li a:hover {
+            background: #fff;
+            color: #333;
+        }
+        
+        .logo img {
+            width: 120px;
+            float: left;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 50%;
+        }
+        
+        .welcome-text {
+            position: absolute;
+            width: 600px;
+            height: 300px;
+            margin: 10% 25%;
+            z-index: 2;
+            text-align: center;
+        }
+        
+        .welcome-text h1 {
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 55px;
+        }
+        
+        .welcome-text a {
+            border: 1px solid #fff;
+            padding: 10px 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-top: 20px;
+            display: inline-block;
+            color: #fff;
+        }
+        
+        .welcome-text a:hover {
+            background: #fff;
+            color: #333;
+        }
+        /*The end of home page */
+        /*The login page*/
+        
+        #login-form {
+            display: none;
+            backdrop-filter: blur(3px);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            text-align: center;
+        }
+        
+        .form-box {
+            width: 380px;
+            height: 420px;
+            position: relative;
+            margin: 2% auto;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: 30px;
+            overflow: hidden;
+        }
+        
+        .button-box {
+            width: 220px;
+            margin: 35px auto;
+            position: relative;
+            box-shadow: 0 0 20px 9px #ff61241f;
+            border-radius: 30px;
+        }
+        
+        .toggle-btn {
+            padding: 10px 30px;
+            cursor: pointer;
+            background: transparent;
+            border: 0;
+            outline: none;
+            position: relative;
+        }
+        
+        #btn {
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 110px;
+            height: 100%;
+            background: #F3C693;
+            border-radius: 30px;
+            transition: 0.5s;
+        }
+        
+        .input-group-login {
+            top: 150px;
+            position: absolute;
+            width: 280px;
+            transition: 0.5s;
+        }
+        
+        .input-group-register {
+            top: 120px;
+            position: absolute;
+            width: 280px;
+            transition: 0.5s;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 10px 0;
+            margin: 5px 0;
+            border-left: 0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 1px solid #999;
+            outline: none;
+            background: transparent;
+        }
+        
+        .submit-btn {
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background: #F3C693;
+            border: 0;
+            outline: none;
+            border-radius: 30px;
+        }
+        
+        .check-box {
+            margin: 30px 10px 34px 0;
+        }
+        
+        #span {
+            color: rgb(211, 218, 211);
+            font-size: 12px;
+            bottom: 68px;
+            position: absolute;
+        }
+        
+         ::placeholder {
+            color: rgb(199, 179, 179);
+            opacity: 10;
+        }
+        
+        #login {
+            left: 50px;
+        }
+        
+        #login-input {
+            color: white;
+            font-size: 15;
+        }
+        
+        #register {
+            left: 450px;
+        }
+        
+        #register-input {
+            color: rgb(240, 236, 236);
+            font-size: 15;
+        }
+        /*End of login*/
+        /*About page*/
+        
+        .column {
+            left: 35 %;
+            position: absolute;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 10 8px;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 10px;
+        }
+        
+        .about-section {
+            padding: 150px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+        
+        .container {
+            padding: 0 16px;
+            position: absolute;
+        }
+        
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+        }
+        
+        .title {
+            color: grey;
+        }
+        
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .button:hover {
+            background-color: #555;
+        }
+        
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+        /*End of About*/
